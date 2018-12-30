@@ -1,6 +1,6 @@
 {
   "name": "tscharke",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A personal card for Thomas Scharke",
   "main": "/bin/card.js",
   "bin": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/tscharke/card.git"
+    "url": "https://github.com/tscharke/tscharke-card"
   },
   "scripts": {
     "prepublish": "npm run build",
