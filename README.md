@@ -7,7 +7,7 @@ It's me, Thomas!
 Via npx:
 
 ```bash
-npx @tscharke/card
+npx tscharke
 ```
 
 Not including how to use it globally because I'm not sure why you'd want this as a global command. That'd be creepy.
