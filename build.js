@@ -9,50 +9,47 @@ const path = require('path')
 // Define options for Boxen
 const options = {
   padding: 1,
-  margin: 1,
+  margin: 0,
   borderStyle: 'round'
 }
 
 // Text + chalk definitions
 const data = {
-  name: chalk.white('              Thomas Scharke'),
-  handle: chalk.white('Passionate implementer of ideas'),
-  work: chalk.white('Freelancing Software Artist & Passionate implementer of ideas'),
+  name: chalk.white('Thomas Scharke'),
+  handle: chalk.gray(
+    'Remote Freelancing Software Artist & Passionate implementer of ideas'
+  ),
+  work: chalk.gray(
+    '#RemoteWork #NewWork #TypeScript #JavaScript #ReactNative #React #Collaboration #Compassionate'
+  ),
   twitter: chalk.gray('https://twitter.com/') + chalk.cyan('t_scharke'),
   npm: chalk.gray('https://npmjs.com/') + chalk.red('~tscharke'),
   github: chalk.gray('https://github.com/') + chalk.green('tscharke'),
   linkedin: chalk.gray('https://linkedin.com/in/') + chalk.blue('tscharke'),
-  web: chalk.cyan('https://van.dermeer.de'),
-  npx: chalk.red('npx') + ' ' + chalk.white('tscharke'),
-  labelWork: chalk.white.bold('       Work:'),
-  labelTwitter: chalk.white.bold('    Twitter:'),
-  labelnpm: chalk.white.bold('        npm:'),
-  labelGitHub: chalk.white.bold('     GitHub:'),
-  labelLinkedIn: chalk.white.bold('   LinkedIn:'),
-  labelWeb: chalk.white.bold('        Web:'),
-  labelCard: chalk.white.bold('       Card:')
+  homepage: chalk.cyan('https://van.dermeer.de'),
+  profile: chalk.cyan('https://thomas-scharke.de'),
+  labelTwitter: chalk.white.bold('Twitter:'),
+  labelnpm: chalk.white.bold('npm:'),
+  labelGitHub: chalk.white.bold('GitHub:'),
+  labelLinkedIn: chalk.white.bold('Profile:'),
+  labelWeb: chalk.white.bold('Links:')
 }
 
-// Actual strings we're going to output
-const newline = '\n'
-const heading = `${data.name} / ${data.handle}`
-const working = `${data.labelWork}  ${data.work}`
-const twittering = `${data.labelTwitter}  ${data.twitter}`
-const npming = `${data.labelnpm}  ${data.npm}`
-const githubing = `${data.labelGitHub}  ${data.github}`
-const linkedining = `${data.labelLinkedIn}  ${data.linkedin}`
-const webing = `${data.labelWeb}  ${data.web}`
-const carding = `${data.labelCard}  ${data.npx}`
+const output = `
+         ${data.name}
+         ${data.handle}
 
-// Put all our output together into a single variable so we can use boxen effectively
-const output = heading + // data.name + data.handle
-               newline + newline + // Add one whole blank line
-               working + newline + // data.labelWork + data.work
-               twittering + newline + // data.labelTwitter + data.twitter
-               npming + newline + // data.labelnpm + data.npm
-               githubing + newline + // data.labelGitHub + data.github
-               linkedining + newline + // data.labelLinkedIn + data.linkedin
-               webing + newline + newline + // data.labelWeb + data.web
-               carding // data.labelCard + data.npx
+         ${data.work}
+          
+${data.labelWeb}   ${data.homepage}
+         ${data.profile}
+${data.labelTwitter} ${data.twitter}
+${data.labelnpm}     ${data.npm}
+${data.labelGitHub}  ${data.github}
+${data.labelLinkedIn} ${data.linkedin}
+`
 
-fs.writeFileSync(path.join(__dirname, 'bin/output'), chalk.green(boxen(output, options)))
+fs.writeFileSync(
+  path.join(__dirname, 'bin/output'),
+  chalk.green(boxen(output, options))
+)
