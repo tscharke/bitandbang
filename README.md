@@ -1,3 +1,5 @@
+![downloads](https://img.shields.io/npm/dt/tscharke) ![version](https://img.shields.io/npm/v/tscharke)
+
 # Thomas Scharke (vandermeer)
 
 Business card of Thomas Scharke
@@ -34,4 +36,4 @@ npx tscharke
 
 ## Credits
 
-Forked from Tierney Cyren's https://github.com/bnb/bitandbang
+Forked from [Tierney Cyren's](https://github.com/bnb/bitandbang)
