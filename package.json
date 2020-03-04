@@ -24,6 +24,7 @@
     "vandermeer"
   ],
   "author": "Thomas Scharke <thomas.scharke@gmail.com>",
+  "homepage": "https://github.com/tscharke/tscharke-card",
   "license": "MIT",
   "files": [
     "bin/card.js",
