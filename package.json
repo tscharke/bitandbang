@@ -14,16 +14,14 @@
     "prepublish": "npm run build",
     "build": "node build.js",
     "dev": "npm run build && node ./bin/card.js",
-    "lint": "standard",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "standard"
   },
   "keywords": [
     "card",
-    "npm",
-    "npm card",
-    "npx",
-    "npx card",
-    "business card"
+    "business card",
+    "thomas scharke",
+    "tscharke",
+    "vandermeer"
   ],
   "author": "Thomas Scharke <thomas.scharke@gmail.com>",
   "license": "MIT",
@@ -32,8 +30,8 @@
     "bin/output"
   ],
   "devDependencies": {
-    "boxen": "^2.1.0",
-    "chalk": "^2.4.1",
-    "standard": "^12.0.1"
+    "boxen": "4.2.0",
+    "chalk": "3.0.0",
+    "standard": "14.3.1"
   }
 }
