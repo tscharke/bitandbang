@@ -1,7 +1,7 @@
 {
   "name": "tscharke",
   "version": "1.0.2",
-  "description": "Business card for Thomas Scharke (vandermeer)",
+  "description": "Business card of Thomas Scharke (vandermeer)",
   "main": "/bin/card.js",
   "bin": {
     "tscharke-card": "./bin/card.js"

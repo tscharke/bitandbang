@@ -1,16 +1,36 @@
-# Thomas Scharke's Card
+# Thomas Scharke (vandermeer)
 
-It's me, Thomas!
+Business card of Thomas Scharke
 
 ## Usage
 
-Via npx:
-
 ```bash
 npx tscharke
+
+╭─────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│                                                                                                             │
+│                                                                                                             │
+│            Thomas Scharke                                                                                   │
+│            Remote Freelancing Software Artist & Passionate implementer of ideas                             │
+│                                                                                                             │
+│            #RemoteWork #NewWork #TypeScript #JavaScript #ReactNative #React #Collaboration #Compassionate   │
+│                                                                                                             │
+│   Links:   https://van.dermeer.de                                                                           │
+│            https://thomas-scharke.de                                                                        │
+│   Twitter: https://twitter.com/t_scharke                                                                    │
+│   npm:     https://npmjs.com/~tscharke                                                                      │
+│   GitHub:  https://github.com/tscharke                                                                      │
+│   Profile: https://linkedin.com/in/tscharke                                                                 │
+│                                                                                                             │
+│                                                                                                             │
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
 ```
 
-Not including how to use it globally because I'm not sure why you'd want this as a global command. That'd be creepy.
+## Profiles
+
+- [LinkedIn](https://linkedin.com/in/tscharke)
+- [Profile](https://thomas-scharke.de)
+- [Homepage](https://van.dermeer.de)
 
 ## Credits
 
